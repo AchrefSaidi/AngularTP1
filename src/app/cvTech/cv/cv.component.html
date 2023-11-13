@@ -1,0 +1,10 @@
+<div class="container mt-4">
+    <div class="row">
+      <div class="col">
+        <app-liste-cv (showCV)="showCV($event)" [cvs]="cvs" ></app-liste-cv>
+      </div>
+      <div class="col-7">
+        <app-detail-cv *ngIf="selectedCV != -1" [showedCv]="cvs[selectedCV]" ></app-detail-cv>
+      </div>
+    </div>
+  </div>

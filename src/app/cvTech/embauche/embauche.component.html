@@ -1,0 +1,12 @@
+<div *ngif="cvEmbauche" class="container">
+    <h2>Cvs Embauchées</h2>
+  
+    <div class="row">
+      <div *ngFor="let cv of cvEmbauche" class="col-md-4">
+        <img class="col-2 align-middle" src="assets/images/cv.path">
+        <div class="col align-middle">{{ cv.name }} {{cv.firstName}}</div>
+      </div>
+    </div>
+  
+  
+  </div>
